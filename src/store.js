@@ -1,4 +1,4 @@
-import { createStore } from "vuex/types/index.js";
+import { createStore } from "vuex";
 import router from './router';
 import Login from "./components/Login.vue";
 
