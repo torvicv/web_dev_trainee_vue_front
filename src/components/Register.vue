@@ -1,6 +1,6 @@
 <template>
     <div class="form-container">
-        <form @submit.prevent="register">
+        <form @submit.prevent="register" class="min-h-screen flex flex-col justify-center items-center">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" v-model="name" placeholder="Name">

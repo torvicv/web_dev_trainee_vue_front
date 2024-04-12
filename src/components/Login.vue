@@ -1,19 +1,19 @@
 <template>
-    <div class="form-container">
-        <form @submit.prevent="login" class="login-form">
-            <div class="form-group">
+    <div class="form-container flex justify-center">
+        <form @submit.prevent="login" class="min-h-screen gap-6 w-3/6 flex flex-col justify-center items-center">
+            <div class="flex justify-start w-full">
                 <label for="email">Email</label>
                 <input type="email" v-model="email" 
-                class="form-control" id="email" 
-                placeholder="Enter email" required />
+                class="w-full focus:outline-none focus:ring-0 focus:border-0 border-b border-blue-600" id="email" 
+                placeholder="Email" required />
             </div>
-            <div class="form-group">
+            <div class="flex justify-start w-full">
                 <label for="password">Password</label>
                 <input type="password" v-model="password" 
-                    class="form-control" id="password" 
-                    placeholder="Enter password" required />
+                    class="w-full focus:outline-none focus:ring-0 focus:border-0 border-b border-blue-600" id="password" 
+                    placeholder="Password" required />
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Login</button>
+            <button type="submit" class="bg-blue-600 py-2 text-white rounded flex justify-center w-full">Login</button>
         </form>
     </div>
 </template>
