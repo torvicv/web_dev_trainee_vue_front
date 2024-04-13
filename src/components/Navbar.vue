@@ -4,6 +4,7 @@
             <router-link to="/login" v-if="!isLoggedIn">Login</router-link>
             <router-link to="/register" v-if="!isLoggedIn">Register</router-link>
             <router-link to="/add-product" v-if="isLoggedIn">Add Product</router-link>
+            <router-link to="/products" v-if="isLoggedIn">Products</router-link>
             <a href="#" @click="logout" v-if="isLoggedIn">Logout</a>
         </div>
     </nav>
