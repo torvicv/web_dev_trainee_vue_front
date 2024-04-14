@@ -1,6 +1,9 @@
 <template>
   <div class="min-h-screen flex items-center justify-center">
-    <form @submit.prevent="submitForm" class="shadow-[0_0_6px_#CCCCCCBB] gap-6 w-2/6 flex flex-col px-6 py-4 rounded">
+    <form
+      @submit.prevent="submitForm"
+      class="shadow-[0_0_6px_#CCCCCCBB] gap-6 w-2/6 flex flex-col px-6 py-4 rounded"
+    >
       <div class="flex justify-start w-full flex gap-4">
         <label for="name">Name</label>
         <input
@@ -11,8 +14,8 @@
           placeholder="product name"
           v-model="name"
         />
-    </div>
-    <p v-if="errors.name" class="text-xs text-red-600">{{ errors.name }}</p>
+      </div>
+      <p v-if="errors.name" class="text-xs text-red-600">{{ errors.name }}</p>
       <div class="flex justify-start w-full flex gap-4">
         <label for="description">Description</label>
         <input
@@ -23,10 +26,10 @@
           placeholder="description"
           v-model="description"
         />
-    </div>
-    <p v-if="errors.description" class="text-xs text-red-600">
-      {{ errors.description }}
-    </p>
+      </div>
+      <p v-if="errors.description" class="text-xs text-red-600">
+        {{ errors.description }}
+      </p>
       <div class="flex justify-start w-full flex gap-4">
         <label for="price">Price</label>
         <input
@@ -41,7 +44,9 @@
       </div>
       <p v-if="errors.price" class="text-xs text-red-600">{{ errors.price }}</p>
       <div class="">
-        <button type="submit" class="bg-blue-500 px-3 py-2 rounded">Add Product</button>
+        <button type="submit" class="bg-blue-500 px-3 py-2 rounded">
+          Add Product
+        </button>
       </div>
     </form>
   </div>

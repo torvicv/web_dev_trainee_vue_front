@@ -4,6 +4,8 @@ import Login from './components/Login.vue';
 import Register from './components/Register.vue';
 import AddProduct from './components/AddProduct.vue';
 import ProducList from './components/ProducList.vue';
+import EditProduct from './components/EditProduct.vue';
+import ProductDetails from './components/ProductDetails.vue';
 
 const routes = [
     {
@@ -29,6 +31,18 @@ const routes = [
         name: 'ProductList',
         meta: {public: false},
         component: ProducList
+    },
+    {
+        path: '/edit-product/:id',
+        name: 'EditProduct',
+        meta: {public: false},
+        component: EditProduct
+    },
+    {
+        path: '/product/:id',
+        name: 'ProductDetails',
+        meta: {public: false},
+        component: ProductDetails
     }
 ];
 
