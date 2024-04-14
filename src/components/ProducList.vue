@@ -7,12 +7,16 @@
             <p class="">
               <small class="text-muted">Price: {{ product.price }}</small>
             </p>
-            <a class="bg-blue-500 rounded py-2 text-white text-center" :href="'/edit-product/'+product.id">
-                Edit
-            </a>
-            <a class="bg-blue-500 rounded py-2 text-white text-center" :href="'/product/'+product.id">
-                Details
-            </a>
+            <router-link 
+              class="bg-blue-500 rounded py-2 text-white text-center"
+              :to="{name: 'EditProduct', params: {id: product.id}}">
+              Edit Product
+            </router-link>
+            <router-link 
+              class="bg-blue-500 rounded py-2 text-white text-center"
+              :to="{name: 'ProductDetails', params: {id: product.id}}">
+              Details Product
+            </router-link>
             <button class="bg-red-600 rounded py-2 text-white" @click="deleteProduct(product.id)">
                 Delete
             </button>
