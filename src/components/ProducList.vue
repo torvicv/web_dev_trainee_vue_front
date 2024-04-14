@@ -15,7 +15,7 @@
             <router-link 
               class="bg-blue-500 rounded py-2 text-white text-center"
               :to="{name: 'ProductDetails', params: {id: product.id}}">
-              Details Product
+              View Details
             </router-link>
             <button class="bg-red-600 rounded py-2 text-white" @click="deleteProduct(product.id)">
                 Delete
